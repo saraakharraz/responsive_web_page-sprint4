@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+
+.container{
+    max-width:100%;
+    width: 100%;
+}
+
+@layer base{
+    svg{
+        @apply text-[#171F84];
+    }
+    .dark svg{
+       @apply  text-blue-700  ;
+    }
+    h4{
+        @apply text-[#1C238D] font-bold  p-2 text-center ;
+    }
+     .dark h4{
+       @apply   text-slate-900;
+    }
+    h3{
+        @apply font-bold  p-2 ;
+    }
+ 
+}
+@Layer components{
+    .card{
+        @apply my-20 mx-10
+    }
+ 
+}
